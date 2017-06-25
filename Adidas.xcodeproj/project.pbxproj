@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F37E4AF1EFFC36800406E1D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37E4AE1EFFC36800406E1D /* Event.swift */; };
+		8F37E4B11EFFD02500406E1D /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37E4B01EFFD02400406E1D /* SearchTextField.swift */; };
 		8F991F151EFD51B100694746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F991F141EFD51B100694746 /* AppDelegate.swift */; };
 		8F991F171EFD51B100694746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F991F161EFD51B100694746 /* ViewController.swift */; };
 		8F991F1A1EFD51B100694746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F991F181EFD51B100694746 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		8F991F1F1EFD51B100694746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F991F1D1EFD51B100694746 /* LaunchScreen.storyboard */; };
 		8F991F2A1EFD51B100694746 /* AdidasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F991F291EFD51B100694746 /* AdidasTests.swift */; };
 		8F991F351EFD51B100694746 /* AdidasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F991F341EFD51B100694746 /* AdidasUITests.swift */; };
+		8FBCDE491EFE5C6E00351500 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBCDE481EFE5C6E00351500 /* Request.swift */; };
+		8FBCDE4B1EFE614E00351500 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBCDE4A1EFE614E00351500 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F37E4AE1EFFC36800406E1D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8F37E4B01EFFD02400406E1D /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		8F991F111EFD51B100694746 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F991F141EFD51B100694746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F991F161EFD51B100694746 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		8F991F301EFD51B100694746 /* AdidasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F991F341EFD51B100694746 /* AdidasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasUITests.swift; sourceTree = "<group>"; };
 		8F991F361EFD51B100694746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBCDE481EFE5C6E00351500 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8FBCDE4A1EFE614E00351500 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F37E4B21EFFD1EC00406E1D /* External Class */ = {
+			isa = PBXGroup;
+			children = (
+				8F37E4B01EFFD02400406E1D /* SearchTextField.swift */,
+			);
+			name = "External Class";
+			sourceTree = "<group>";
+		};
 		8F991F081EFD51AF00694746 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				8F991F141EFD51B100694746 /* AppDelegate.swift */,
-				8F991F161EFD51B100694746 /* ViewController.swift */,
-				8F991F181EFD51B100694746 /* Main.storyboard */,
+				8FBCDE461EFE5C0000351500 /* View */,
+				8FBCDE471EFE5C0600351500 /* Controller */,
+				8FBCDE451EFE5BFB00351500 /* Model */,
 				8F991F1B1EFD51B100694746 /* Assets.xcassets */,
-				8F991F1D1EFD51B100694746 /* LaunchScreen.storyboard */,
 				8F991F201EFD51B100694746 /* Info.plist */,
 			);
 			path = Adidas;
@@ -123,6 +139,34 @@
 				8F991F361EFD51B100694746 /* Info.plist */,
 			);
 			path = AdidasUITests;
+			sourceTree = "<group>";
+		};
+		8FBCDE451EFE5BFB00351500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F37E4B21EFFD1EC00406E1D /* External Class */,
+				8FBCDE481EFE5C6E00351500 /* Request.swift */,
+				8F37E4AE1EFFC36800406E1D /* Event.swift */,
+				8FBCDE4A1EFE614E00351500 /* AlertViewController.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8FBCDE461EFE5C0000351500 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F991F181EFD51B100694746 /* Main.storyboard */,
+				8F991F1D1EFD51B100694746 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8FBCDE471EFE5C0600351500 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F991F161EFD51B100694746 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F991F171EFD51B100694746 /* ViewController.swift in Sources */,
+				8FBCDE491EFE5C6E00351500 /* Request.swift in Sources */,
 				8F991F151EFD51B100694746 /* AppDelegate.swift in Sources */,
+				8FBCDE4B1EFE614E00351500 /* AlertViewController.swift in Sources */,
+				8F37E4AF1EFFC36800406E1D /* Event.swift in Sources */,
+				8F37E4B11EFFD02500406E1D /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +551,7 @@
 				8F991F3B1EFD51B100694746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F991F3C1EFD51B100694746 /* Build configuration list for PBXNativeTarget "AdidasTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +560,7 @@
 				8F991F3E1EFD51B100694746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F991F3F1EFD51B100694746 /* Build configuration list for PBXNativeTarget "AdidasUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +569,7 @@
 				8F991F411EFD51B100694746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
