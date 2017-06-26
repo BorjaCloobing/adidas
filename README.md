@@ -20,7 +20,9 @@ en la app sin tener que hacer updates en los distintos stores.
 SaveUserInfo.php : Archivo que llamo cuando quiero guardar los campos recogídos en el formulario, como añadido hago una pequeña
 comprobación en BD comprobando que el email introducido no existe previamente en la BD.
 // Al no haber información de contenido privado como contraseñas o claves, he dedico no hacer ningún cifrado de los campos.
+
 ![alt text](http://www.cursoswordpressintensivo.com/adidas/adidas.png)
+
 Con respecto al proyecto iOS, decir que normalmente para proyectos más grandes donde hay numerosas consultas a APIS suelo utilizar
 Frameworks como SwiftyJson, Alamofire y para el cacheo de imágenes Haneke, pero al ser un proyecto donde solo existen un par de 
 llamadas y una imagen, no lo ví necesario.
